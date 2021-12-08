@@ -52,8 +52,8 @@ git commit -m "Untrack files in .gitignore"
   
 # Branch Commands
   Git branch newbranch --create  branch  
-  Git checkout newbranch --switch to newbranch  
-  Git checkout -b newbrnach --create and switch to newbranch  
+  git checkout <existing_branch>
+  git checkout -b <new_branch>  --create and checkout new branch
   Git branch -d newbranch --delete a branch  
   Git branch --list all branches.  
 

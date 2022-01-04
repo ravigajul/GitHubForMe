@@ -66,7 +66,10 @@ git commit -m "Untrack files in .gitignore"
 
 # Display all remote repositories
   Git remote -v  
-
+# Remove local untracked files
+  1. To remove directories, run git clean -f -d or git clean -fd.
+  2. To remove ignored files, run git clean -f -X or git clean -fX.
+  3. To remove ignored and non-ignored files, run git clean -f -x or git clean -fx.
 # Rebase & Squash
   Git rebase master //this will point the base of current branch to latest commit in the master branch.  
   Git rebase -i HEAD~3 //this will display all the 3 commits with pick..update the other two to squash from pick to merge multiple commits into one commit.  

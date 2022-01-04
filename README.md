@@ -99,6 +99,14 @@ git commit -m "Untrack files in .gitignore"
   Git reflog  
   This shows the commit hashes even for the resets hards and soft so that we can reset the head to a particular commit.  
   
+# How to remove committed files from Git version control
+  Create a .gitignore file, if you haven’t already
+  Edit .gitignore to match the file/folder you want to ignore
+  Execute the following command: 
+  git rm --cached path/to/file. Git will list the files it has deleted. 
+  The --cached flag should be used if you want to keep the local copy but   remove it from the repository.
+  Verify that these files are being deleted from version control using git status
+  Push the changes to the repository  
 
 
 

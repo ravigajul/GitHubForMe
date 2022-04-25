@@ -80,7 +80,7 @@ git commit -m "Untrack files in .gitignore"
  ```
   Git reset --soft HEAD~1  # without loosing the changes latest 1 commit  
   Git reset --hard HEAD~1  # loose all the changes latest 1 commit
-  Git rest --soft commit id
+  Git reset --soft commit id
 ```
 # Revert is undoing
   Git revert 3dsfse //will undo the changes ..if a file was added in previous commit it will delete in this commit.  

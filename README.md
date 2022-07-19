@@ -109,7 +109,9 @@ git commit -m "Untrack files in .gitignore"
   Verify that these files are being deleted from version control using git status
   Push the changes to the repository  
 
-
+## Download a file from github using curl or wget
+wget command is a commonly used CLI to download files from the internet. curl is another command used to transfer data to or from a server.
+If you want to download the student.json using the url "https://github.com/ravigajul/NodeJsForMe/blame/master/Playground/student.json" It will just be a github html page and not the actual student.json. In order to dwonload the actual file, we should be using the raw file url from github instead like https://raw.githubusercontent.com/ravigajul/NodeJsForMe/master/Playground/student.json.
 
 
 

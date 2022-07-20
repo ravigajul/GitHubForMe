@@ -113,7 +113,9 @@ git commit -m "Untrack files in .gitignore"
 wget command is a commonly used CLI to download files from the internet. curl is another command used to transfer data to or from a server.
 If you want to download the student.json using the url "https://github.com/ravigajul/NodeJsForMe/blame/master/Playground/student.json" It will just be a github html page and not the actual student.json. In order to dwonload the actual file, we should be using the raw file url from github instead like https://raw.githubusercontent.com/ravigajul/NodeJsForMe/master/Playground/student.json.
 
-
+## Download a file from bitbucket using curl
+Generate and replace the token and use the raw file url
+curl -o filename -H "Authorization: Bearer Token" https://bitbucket.com/projects/projectname/repos/reponame/raw/filename?at=refs%2Fheads%2FBranchName
 
 
 

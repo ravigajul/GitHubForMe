@@ -115,7 +115,9 @@ If you want to download the student.json using the url "https://github.com/ravig
 
 ## Download a file from bitbucket using curl
 Generate and replace the token and use the raw file url
-curl -o filename -H "Authorization: Bearer Token" https://bitbucket.com/projects/projectname/repos/reponame/raw/filename?at=refs%2Fheads%2FBranchName
+```
+  curl -o filename -H "Authorization: Bearer Token" https://bitbucket.com/projects/projectname/repos/reponame/raw/filename?at=refs%2Fheads%2FBranchName
+  ```
 
 
 

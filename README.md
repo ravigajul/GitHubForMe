@@ -123,7 +123,16 @@ Generate and replace the token and use the raw file url
 ```
   curl -o filename -H "Authorization: Bearer Token" https://bitbucket.com/projects/projectname/repos/reponame/raw/filename?at=refs%2Fheads%2FBranchName
   ```
-
+## Get latest code from master and merge to dev branch
+```git
+git checkout dev
+git pull origin master
+```
+Alternatively
+```git
+git fetch origin
+git merge origin/master
+```
 
 
 

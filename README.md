@@ -133,6 +133,23 @@ Alternatively
 git fetch origin
 git merge origin/master
 ```
+## Remove untracked files
+remove files and directories
+```git
+git clean -f -d
+```
+To check which fils will be removed by git clean
+```git
+git clean -f -n
+```
+To preview the files and directories that will be removed, use the -n option:
+```git
+git clean -f -d -n
+```
+To just remove files
+```git
+git clean -f
+```
 
 
 

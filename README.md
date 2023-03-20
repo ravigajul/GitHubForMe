@@ -150,6 +150,7 @@ To just remove files
 ```git
 git clean -f
 ```
-
+## Git Pull vs Git Fetch
+The main difference between git pull and git fetch is that git pull fetches and merges changes from a remote branch into your local branch in a single command, while git fetch only fetches changes from the remote branch and does not merge them automatically.
 
 

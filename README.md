@@ -153,4 +153,39 @@ git clean -f
 ## Git Pull vs Git Fetch
 The main difference between git pull and git fetch is that git pull fetches and merges changes from a remote branch into your local branch in a single command, while git fetch only fetches changes from the remote branch and does not merge them automatically.
 
+## Host html pages on GitHub Gist
+create a simple HTML page that demonstrates the autocomplete feature using a basic input field with some predefined options. We'll host this on GitHub Gist and make it shareable.
 
+### Step 1: Create the HTML Page
+### Step 2: Create a GitHub Gist
+
+1. **Sign in to GitHub**:
+   - Go to [GitHub](https://github.com/) and sign in with your GitHub account.
+
+2. **Create a New Gist**:
+   - Go to [GitHub Gist](https://gist.github.com/).
+   - Enter a description, for example, "Autocomplete HTML Example".
+   - Name the file `practise.html`.
+   - Paste the HTML content from above into the text area.
+
+3. **Save the Gist**:
+   - Choose whether to make the gist public or secret.
+   - Click the "Create public gist" or "Create secret gist" button.
+
+### Step 3: Get the Raw URL and Use RawGit or GitHack
+
+1. **Get the Raw URL**:
+   - After creating the gist, click on the "Raw" button to get the raw URL of the HTML file. It should look something like `https://gist.githubusercontent.com/your-username/gist-id/raw/practise.html`.
+
+2. **Use GitHack to Render the HTML**:
+   - Go to `https://raw.githack.com/`.
+   - Enter the raw URL in the input field and get the formatted URL.
+
+   Example:
+   - Raw URL: `https://gist.githubusercontent.com/your-username/gist-id/raw/practise.html`
+   - GitHack URL: `https://raw.githack.com/your-username/gist-id/raw/practise.html`
+
+3. **Open the Rendered URL**:
+   - Copy the GitHack URL and paste it into a new browser tab to see your autocomplete HTML page rendered properly.
+
+By following these steps, you will have a shareable HTML page that demonstrates the autocomplete feature, hosted on GitHub Gist.

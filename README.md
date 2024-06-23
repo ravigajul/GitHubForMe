@@ -50,6 +50,12 @@ git commit -m "Untrack files in .gitignore"
 # To switch remote url from https to ssh
   https://docs.github.com/en/github/getting-started-with-github/managing-remote-repositories  
   
+## Update remote url to a different repo
+```git
+git remote -v # checking existing url
+git remote set-url origin <new-url>
+```
+
 # Branch Commands
   Git branch newbranch --create  branch  
   git checkout <existing_branch>

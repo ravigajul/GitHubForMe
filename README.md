@@ -195,3 +195,53 @@ create a simple HTML page that demonstrates the autocomplete feature using a bas
    - Copy the GitHack URL and paste it into a new browser tab to see your autocomplete HTML page rendered properly.
 
 By following these steps, you will have a shareable HTML page that demonstrates the autocomplete feature, hosted on GitHub Gist.
+
+## Install Apps VM
+```.ps
+#
+# Functions
+#
+
+function Update-Environment-Path
+{
+    $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") `
+        + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+}
+
+#Create required directories
+New-Item -ItemType directory -Path C:\workdir
+
+#
+# IntelliJ
+#
+choco install intellijidea-community --yes
+Update-Environment-Path
+
+#
+# Maven
+#
+choco install maven --yes
+Update-Environment-Path
+
+#
+# Misc
+#
+choco install notepadplusplus --yes
+
+#
+# Java
+#
+choco install openjdk --version=17.0.2 --yes
+Update-Environment-Path
+
+#
+# Update CACERTS files
+#
+Move-Item "C:\Program Files\OpenJDK\jdk-17.0.2\lib\security\cacerts" -Destination "C:\Program Files\OpenJDK\jdk-17.0.2\lib\security\cacerts.sav" -Force
+Copy-Item -Path "C:\VMSetup\cacerts" -Destination "C:\Program Files\OpenJDK\jdk-17.0.2\lib\security"
+
+#
+# Environment update
+#
+[Environment]::SetEnvironmentVariable("IDEA_JDK_64", $Env:java_home, [EnvironmentVariableTarget]::Machine)
+```

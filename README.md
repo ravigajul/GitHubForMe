@@ -245,3 +245,29 @@ Copy-Item -Path "C:\VMSetup\cacerts" -Destination "C:\Program Files\OpenJDK\jdk-
 #
 [Environment]::SetEnvironmentVariable("IDEA_JDK_64", $Env:java_home, [EnvironmentVariableTarget]::Machine)
 ```
+## Rename and branch and push the changes to it
+
+To rename your branch from `feature/LNTestingProvenir-JB-5443` to `feature/LNTestingProvenir-JB-54443`, you can use the following Git commands:
+
+1. **Rename the branch locally**:
+    ```bash
+    git branch -m feature/LNTestingProvenir-JB-5443 feature/LNTestingProvenir-JB-54443
+    ```
+
+2. **Delete the old branch name from the remote repository**:
+    ```bash
+    git push origin --delete feature/LNTestingProvenir-JB-5443
+    ```
+
+3. **Push the new branch name to the remote repository**:
+    ```bash
+    git push origin feature/LNTestingProvenir-JB-54443
+    ```
+
+4. **Reset the upstream branch for the new branch name**:
+    ```bash
+    git push --set-upstream origin feature/LNTestingProvenir-JB-54443
+    ```
+
+This will ensure your branch is renamed both locally and on the remote repository. 
+
